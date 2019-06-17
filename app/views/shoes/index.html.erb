@@ -1,0 +1,8 @@
+<h1>Shoe House</h1>
+<h2>index</h2>
+
+<% @shoes.each do |shoe| %>
+<li><%= link_to shoe.brand, shoe %>
+  <%= link_to shoe.title, shoe %>
+  <%= shoe.price %></li>
+<% end %>

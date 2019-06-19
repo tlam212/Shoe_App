@@ -1,3 +1,7 @@
+
+pam = User.create(name: "Pam", username: "Pam1234", email: "pamsky@gsite.com", password:"abc123" )
+lisa = User.create(name: "Lisa", username: "Lisa1234", email: "lisky@gsite.com", password:"lisa123" )
+
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
@@ -26,3 +30,4 @@ shoe9 = Shoe.create(brand: "Jimmy Choo", title: 'ROMY 100-pumps', description: "
 shoe10 = Shoe.create(brand: "Jimmy Choo", title: "GOODWIN FLAT", description: "Black Suede Pointed Toe Ballerina Flat with Jewelled Buckle", category: 'Flats', price: 950, img_url: "jimmychoo-flat.png")
 
 shoe11 = Shoe.create(brand: 'Jorden', title: 'Air Jordan 1 Jester XX Low', description: "Shown: White/White", category: 'Sneakers', price: 595, img_url: "jorden-female.png")
+

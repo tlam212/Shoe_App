@@ -1,0 +1,87 @@
+
+
+
+// --------------------------------HEADER--------------------------------------------------
+header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://source.unsplash.com/lY3d_sIzBXg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+
+}
+#header {
+  background-color: white;
+  border-bottom: solid black;
+
+}
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+h1 {
+  font-family: 'Satisfy', cursive;
+  font-size: 70px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: white;
+  word-spacing: 4px;
+}
+
+.crush {
+  font-family: 'Satisfy', cursive;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 40px;
+}
+.display-3{
+  color: black;
+}
+
+.show {
+  font-size: 30px;
+}
+
+ul {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 20px;
+}
+
+
+
+
+  // ---------------------BUTTONS--------------------------------------
+.btn-full:link,
+.btn-full:visited {
+    border: 1px solid #DB7093;
+    color: #DB7093;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #DB7093;
+    color: #DB7093;
+}
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color:#FF69B4;
+}
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #DB7093;
+    color: white;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #DB7093;
+    color: white;
+}

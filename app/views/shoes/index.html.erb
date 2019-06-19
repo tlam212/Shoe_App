@@ -18,6 +18,7 @@
 <br>
   <% @shoes.each do |shoe| %>
   <ul>
+    <%= image_tag shoe.img_url %>
     <li><%= link_to shoe.brand, shoe %><br>
     <%= link_to shoe.title, shoe %><br>
     price: $<%= shoe.price %></li><br>

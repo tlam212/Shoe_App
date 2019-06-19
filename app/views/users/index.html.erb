@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="users.scss">
+<link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+
+
+
+<!-- <section id="header" class="jumbotron text-left">
+    <h1 class="display-3">House of Shoes</h1>
+    <p class="lead"> Home to a collection of fabulous shoes</p>
+    <%= link_to "Enter", new_user_path %>
+</section> -->
+
+
+<header>
+
+          <div class="hero-text-box">
+              <h1>House of Shoes</h1>
+              <%= link_to "Sign up", {controller: "users", action: "new"}, class: "btn btn-full js--scroll-to-plans" %>
+              <%= link_to "Shoe crushes", {controller: "users", action: "new"}, class: "btn btn-ghost js--scroll-to-plans" %>
+
+
+          </div>
+        </header>

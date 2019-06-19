@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="users.scss">
+<link rel="stylesheet" href="users.scss">
+<link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Satisfy|Shadows+Into+Light&display=swap" rel="stylesheet">
+
+<section id="header" class="jumbotron text-left">
+    <h1 class="display-3">Hey <%= @user.name.capitalize %>!💋</h1>
+</section>
+
+<ul>
+  <p class="show">Username: <%= @user.username.capitalize %></p>
+  <p class="show">Email: <%= @user.email %></p>
+  <%# <%= link_to "Shoe crushes", {controller: "shoes", action: "index"}, class: "btn btn-ghost js--scroll-to-plans" %>
+<br>
+
+  <p class="crush">Your Crushes</p>
+   <% @user.shoes.each do |shoe| %>
+   <li>link_to @shoe.name, shoe</li>
+   <% end %>
+
+</ul>

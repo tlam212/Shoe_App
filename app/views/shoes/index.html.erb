@@ -1,5 +1,6 @@
-<h1>Index Page of House of Shoe</h1>
+<center><h1>Index Page of House of Shoe</h1></center>
 <!-- search  -->
+<ul>
 <h2>Filter By:</h2>
 
   <%= form_tag "/shoes", method: 'get' do %>
@@ -7,8 +8,11 @@
     <%= text_field_tag :search %>
     <%= label_tag :category %>
     <%= select_tag 'category', options_for_select([["None", "None"], ["Flip Flops", "Flip Flops"], ["Sneakers", 'sneaker'], ["Heels", "Heels"]]) %>
+    <%= label_tag :brand %>
+    <%= select_tag 'brand', options_for_select([["None", "None"], ["Nike", "Nike"], ["Tory Burch", "Tory Burch"], ["Calvin Klein", "Calvin Klein"]]) %>
     <%= submit_tag 'search' %>
   <% end %>
+  </ul>
 
 <!-- List of all shoes  -->
 <br>

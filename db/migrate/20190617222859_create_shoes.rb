@@ -6,6 +6,7 @@ class CreateShoes < ActiveRecord::Migration[6.0]
       t.text :description
       t.string :category
       t.decimal :price, precision: 15, scale: 2
+      t.string :img_url
 
       t.timestamps
     end

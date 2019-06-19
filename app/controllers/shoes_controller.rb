@@ -2,7 +2,7 @@ class ShoesController < ApplicationController
 
   def index
     if params[:search] && params[:search] != ""
-      @shoes = Shoe.where("brand like ?", "%#{params[:search]}%")
+      @shoes = Shoe.where("title like ?", "%#{params[:search]}%")
     else
       @shoes = Shoe.all
     end
@@ -11,6 +11,12 @@ class ShoesController < ApplicationController
       @shoes = @shoes.select do |shoe|
         shoe.category == params[:category]
       end
+   end
+   
+   if params[:brand] && params[:brand] != "None"
+     @shoes = @shoes.select do |shoe|
+       shoe.brand == params[:brand]
+     end
    end
  end
 

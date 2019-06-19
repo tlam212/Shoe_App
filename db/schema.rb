@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2019_06_17_222859) do
     t.text "description"
     t.string "category"
     t.decimal "price", precision: 15, scale: 2
+    t.string "img_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

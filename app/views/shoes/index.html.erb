@@ -1,8 +1,21 @@
-<h1>Shoe House</h1>
-<h2>index</h2>
+<h1>Index Page of House of Shoe</h1>
+<!-- search  -->
+<h2>Filter By:</h2>
 
-<% @shoes.each do |shoe| %>
-<li><%= link_to shoe.brand, shoe %>
-  <%= link_to shoe.title, shoe %>
-  <%= shoe.price %></li>
+  <%= form_tag "/shoes", method: 'get' do %>
+    <%= label_tag :search %>
+    <%= text_field_tag :search %>
+    <%= label_tag :category %>
+    <%= select_tag 'category', options_for_select([["None", "None"], ["Flip Flops", "Flip Flops"], ["Sneakers", 'sneaker'], ["Heels", "Heels"]]) %>
+    <%= submit_tag 'search' %>
+  <% end %>
+
+<!-- List of all shoes  -->
+<br>
+  <% @shoes.each do |shoe| %>
+  <ul>
+    <li><%= link_to shoe.brand, shoe %><br>
+    <%= link_to shoe.title, shoe %><br>
+    price: $<%= shoe.price %></li><br>
+</ul>
 <% end %>

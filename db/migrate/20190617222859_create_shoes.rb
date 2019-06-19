@@ -4,8 +4,8 @@ class CreateShoes < ActiveRecord::Migration[6.0]
       t.string :brand
       t.string :title
       t.text :description
-      t.string :type
-      t.decimal :price
+      t.string :category
+      t.decimal :price, precision: 15, scale: 2
 
       t.timestamps
     end

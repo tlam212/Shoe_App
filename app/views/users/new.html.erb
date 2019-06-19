@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="users.scss">
+<link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Satisfy|Shadows+Into+Light&display=swap" rel="stylesheet">
+
+<section id="header" class="jumbotron text-left">
+    <h1 class="display-3">House of Shoes</h1>
+    
+</section>
+
+<ul>
+  <%= form_for @user do |f|%>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :username %>
+  <%= f.text_field :username%>
+  <%= f.label :email %>
+  <%= f.email_field :email %>
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+  <%= f.submit "Sign up"%>
+  <% end %>
+
+
+
+</ul>

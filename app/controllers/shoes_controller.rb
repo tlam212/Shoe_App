@@ -12,7 +12,7 @@ class ShoesController < ApplicationController
         shoe.category == params[:category]
       end
    end
-   
+
    if params[:brand] && params[:brand] != "None"
      @shoes = @shoes.select do |shoe|
        shoe.brand == params[:brand]
@@ -23,6 +23,7 @@ class ShoesController < ApplicationController
 
   def show
     @shoe = Shoe.find_by(id: params[:id])
+    @user = User.find(session[:user_id])
   end
 
   def new

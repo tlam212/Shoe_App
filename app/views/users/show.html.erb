@@ -15,7 +15,11 @@
 
   <p class="crush">Your Crushes</p>
    <% @user.shoes.each do |shoe| %>
-   <li>link_to @shoe.name, shoe</li>
+   <li><%=link_to shoe.title, shoe %></li>
    <% end %>
 
 </ul>
+
+  <ul>
+    <p><%= link_to "All Shoes", shoes_path  %></p>
+  </ul>

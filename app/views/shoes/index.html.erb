@@ -14,13 +14,19 @@
   <% end %>
   </ul>
 
+  <!-- Show Flash Errors -->
+  <% if flash[:notice]  %>
+    <h3 style="color: red"><%= flash[:notice] %></h3>
+  <% end %>
+
 <!-- List of all shoes  -->
 <br>
   <% @shoes.each do |shoe| %>
   <ul>
     <%= image_tag shoe.img_url %>
-    <li><%= link_to shoe.brand, shoe %><br>
-    <%= link_to shoe.title, shoe %><br>
+    <li><%= button_to "Like", {controller: 'likes', action: 'create', shoe_id: shoe.id} %><br>
+    <%= link_to shoe.brand, shoe %><br>
+    <%=shoe.title %><br>
     price: $<%= shoe.price %></li><br>
 </ul>
 <% end %>

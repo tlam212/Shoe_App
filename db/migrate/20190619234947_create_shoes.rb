@@ -3,9 +3,9 @@ class CreateShoes < ActiveRecord::Migration[6.0]
     create_table :shoes do |t|
       t.string :brand
       t.string :title
-      t.text :description
+      t.string :description
       t.string :category
-      t.decimal :price, precision: 15, scale: 2
+      t.decimal :price
       t.string :img_url
 
       t.timestamps

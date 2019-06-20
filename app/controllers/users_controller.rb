@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:id])
+    @user = User.find_by(id: params[:id])
   end
 
   def new
@@ -14,6 +14,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.create(user_params)
+    session[:user_id] = @user.id
     if @user.valid?
       redirect_to @user
     else
@@ -27,7 +28,5 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:name, :username, :email, :password)
   end
-
-
 
 end

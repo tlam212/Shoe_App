@@ -1,7 +1,15 @@
-<h1><%= @shoe.brand %> - <%= @shoe.title %></h1>
-<img src="<%= @shoe.img_url %>" alt="">
+<link rel="stylesheet" href="shoes.scss">
+
+<h1 class="shoe1"><%= @shoe.brand %> - <%= @shoe.title %></h1>
 <ul>
-  <p> <%= @shoe.description %> </p>
-  <p> <%= @shoe.category %> </p>
-  <p> <%= @shoe.price %> </p>
+  <%= image_tag @shoe.img_url %>
+  <p>Description: <%= @shoe.description %> </p>
+  <p>Category: <%= @shoe.category %> </p>
+  <p>Price: $<%= @shoe.price %> </p>
+</ul>
+
+<ul>
+  <p><%= link_to "All Shoes", shoes_path  %></p>
+  <p> <%= link_to "Wish list", user_path(@user) %> </p>
+  <p> <%= link_to "Home", users_path %> </p>
 </ul>

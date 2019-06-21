@@ -1,4 +1,36 @@
+// Place all the styles related to the shoe controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+  // * {
+  //   border: 1px solid black;
+  // }
+
 .shoe1 {
+  width: 100%;
+  text-align: center;
   color: black;
-  font-family: 'Satisfy', cursive;
+  margin-top: auto;
+}
+
+img {
+  width: 100%;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body > div.row {
+      // margin-left: 20px;
+      width: 70%;
+      margin: auto;
 }

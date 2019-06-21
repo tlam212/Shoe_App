@@ -1,15 +1,20 @@
-<center><h1>Index Page of House of Shoe</h1></center>
+
+
 <!-- search  -->
+<div class="row">
+  <h1 class='shoe1'> House of Shoe</h1>
+
 <ul>
+
 <h2>Filter By:</h2>
 
   <%= form_tag "/shoes", method: 'get' do %>
     <%= label_tag :search %>
     <%= text_field_tag :search %>
     <%= label_tag :category %>
-    <%= select_tag 'category', options_for_select([["None", "None"], ["Flip Flops", "Flip Flops"], ["Sneakers", 'sneaker'], ["Heels", "Heels"]]) %>
+    <%= select_tag 'category', options_for_select([["None", "None"], ["Flip Flops", "Flip Flops"], ["Sneakers", 'Sneakers'], ["Heels", "Heels"], ["Pumps", "Pumps"], ["Boots", "Boots"], ["Flats", "Flats"]]) %>
     <%= label_tag :brand %>
-    <%= select_tag 'brand', options_for_select([["None", "None"], ["Nike", "Nike"], ["Tory Burch", "Tory Burch"], ["Calvin Klein", "Calvin Klein"]]) %>
+    <%= select_tag 'brand', options_for_select([["None", "None"], ["Nike", "Nike"], ["Tory Burch", "Tory Burch"], ["Calvin Klein", "Calvin Klein"], ["Christian Louboutin", "Christian Louboutin"], ["Jimmy Choo", "Jimmy Choo"], ["Jorden", "Jorden"]]) %>
     <%= submit_tag 'search' %>
   <% end %>
   </ul>
@@ -19,14 +24,15 @@
     <h3 style="color: red"><%= flash[:notice] %></h3>
   <% end %>
 
-<!-- List of all shoes  -->
-<br>
-  <% @shoes.each do |shoe| %>
-  <ul>
-    <%= image_tag shoe.img_url %>
-    <li><%= button_to "Like", {controller: 'likes', action: 'create', shoe_id: shoe.id} %><br>
+<% @shoes.each do |shoe| %>
+  <div class="column">
+    <img src=<%= "/assets/#{shoe.img_url}" %> alt="Snow" style="width:100%">
+    <%= button_to "Like", {controller: 'likes', action: 'create', shoe_id: shoe.id} %><br>
     <%= link_to shoe.brand, shoe %><br>
-    <%=shoe.title %><br>
+    <%= shoe.title %><br>
     price: $<%= shoe.price %></li><br>
-</ul>
-<% end %>
+  </div>
+
+  <% end %>
+
+</div>

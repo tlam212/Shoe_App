@@ -5,7 +5,7 @@
 
 <h1 class="shoe1"><%= @shoe.brand %> - <%= @shoe.title %></h1>
 <ul>
-  <%= image_tag @shoe.img_url %>
+    <img src=<%="/assets/#{@shoe.img_url}"%> alt="Snow" style="width:30%">
   <p>Description: <%= @shoe.description %> </p>
   <p>Category: <%= @shoe.category %> </p>
   <p>Price: $<%= @shoe.price %> </p>

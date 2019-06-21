@@ -1,8 +1,9 @@
 class ShoesController < ApplicationController
 
   def index
+    # byebug
     if params[:search] && params[:search] != ""
-      @shoes = Shoe.where("title like ?", "%#{params[:search]}%")
+      @shoes = Shoe.where("brand like ?", "%#{params[:search]}%")
     else
       @shoes = Shoe.all
     end

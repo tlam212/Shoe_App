@@ -22,6 +22,20 @@ class UsersController < ApplicationController
     end
   end
 
+  def edit
+    @user
+
+  end
+  def update
+    @user = User.find(params[:id])
+    @user.update(user_params)
+    redirect_to @user
+  end
+  def destroy
+    @user = User.find(params[:id])
+    @user.destroy
+    redirect_to to user_path
+  end
 
   private
 

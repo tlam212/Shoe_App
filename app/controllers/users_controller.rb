@@ -31,11 +31,11 @@ class UsersController < ApplicationController
     @user.update(user_params)
     redirect_to @user
   end
-  def destroy
-    @user = User.find(params[:id])
-    @user.destroy
-    redirect_to to user_path
-  end
+  # def destroy
+  #   @user = User.find(params[:id])
+  #   @user.destroy
+  #   redirect_to shoes_path
+  # end
 
   private
 

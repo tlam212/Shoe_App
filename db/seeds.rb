@@ -10,6 +10,7 @@
 
 shoe1 = Shoe.create(brand: 'Nike', title: "Women's Running Shoe", description: 'Lightweight, flexible running shoe', category: 'Sneakers', price: 65.00, img_url: "Nike.png")
 
+
 shoe3 = Shoe.create(brand: 'Tory Burch', title: 'Thin Flip Flop', description: 'The beach is calling. Answer with the Tory Burch® Thin Flip Flop!', category: 'Flip Flops', price: 58.00, img_url: "ToryBurch.png")
 
 shoe4 = Shoe.create(brand: "Calvin Klein", title: 'GELLA PATENT HEEL', description: "Designed with a contoured silhouette, these modern heels are made with a textured faux patent leather, curved straps with a closed toe, a padded logo footbed and a high heel. featuring manmade materials and vegan friendly.", category: 'Heels', price: 87.20, img_url: "CK.png")
@@ -27,6 +28,22 @@ shoe9 = Shoe.create(brand: "Jimmy Choo", title: 'ROMY 100-pumps', description: "
 shoe10 = Shoe.create(brand: "Jimmy Choo", title: "GOODWIN FLAT", description: "Black Suede Pointed Toe Ballerina Flat with Jewelled Buckle", category: "Flats", price: 950, img_url: "jimmychoo-flat.png")
 
 shoe11 = Shoe.create(brand: "Jorden", title: 'Air Jordan 1 Jester XX Low', description: "Shown: White/White", category: 'Sneakers', price: 595, img_url: "jorden-female.png")
+
+shoe12 = Shoe.create(brand: 'Nike', title: "Nike Air VaporMax 2019", description: 'Designed for running but adopted by the street, the Nike Air VaporMax 2019 features the lightest, most flexible Air Max cushioning to-date.', category: 'Sneakers', price: 190, img_url: "nike2.png")
+
+shoe13 = Shoe.create(brand: 'Nike', title: "Nike Air Max 270", description: 'The Nike Air Max 270 is inspired by 2 icons of big Air: Air Max 180 and Air Max 93. It features Nike’s biggest heel Air unit yet for a soft ride that feels as remarkable as it looks.', category: 'Sneakers', price: 150, img_url: "nike3.png")
+
+shoe14 = Shoe.create(brand: "Jorden", title: 'Jordan CP3.XII', description: "Designed to match the agile demands of Chris Paul, the Jordan CP3.XII has everything you need to speed up or slow down during possessions. Fabric in the upper is lightweight and breathable, while forefoot cushioning technology provides responsiveness and support on the court.", category: 'Sneakers', price: 79.97, img_url: "jorden2.png")
+
+shoe15 = Shoe.create(brand: "Jorden", title: 'Jordan Jumpman Diamond Mid', description: "Shown: Black/White/University Red", category: 'Sneakers', price: 120.00, img_url: "jorden3.png")
+
+shoe16 = Shoe.create(brand: "Jimmy Choo", title: 'MINORI 65', description: "Latte Calf Leather Ankle Bootie with Gold JC Logo", category: 'Boots', price: 1295.00, img_url: "jimmy2.png")
+
+
+
+
+
+
 
 pam = User.create(name: "Pam", username: "Pam1234", email: "pamsky@gsite.com", password:"abc123" )
 lisa = User.create(name: "Lisa", username: "Lisa1234", email: "lisky@gsite.com", password:"lisa123" )

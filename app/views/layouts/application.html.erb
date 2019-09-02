@@ -7,15 +7,35 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
-    
+
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 
+
+    <style>
+    .container {
+       position:relative;
+       left: 0;
+       right: 0;
+       bottom: 0;
+       width: 100%;
+       background-color: pink;
+       color: white;
+       text-align: center;
+    }
+    </style>
   </head>
 
 
   <body>
     <%= yield %>
   </body>
+
+  <!-- <footer>
+    <div class='container'>
+      <p> <%= link_to "Home", users_path %> </p>
+      <p><%= link_to "All Shoes", shoes_path  %></p>
+    </div>
+  </footer> -->
 </html>

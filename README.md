@@ -1,7 +1,12 @@
-# README
+# House of Shoes
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Tech stack
+
+Ruby on Rails
+
+## Aplication Figure
+
+coming soon....
 
 Things you may want to cover:
 

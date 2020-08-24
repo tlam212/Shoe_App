@@ -1,29 +1,29 @@
 # House of Shoes
 
-## Tech stack
+## Technologies Implemented
 
 Ruby on Rails
+Bootstrap
+CSS
 
 ## Aplication Figure
 
-coming soon....
+Project Page: 
+<br>
+![](pictures/HOS.png)
+<br>
+![](pictures/HOS2.png)
+<br>
+![](pictures/HOS3.png)
+<br>
+![](pictures/HOS4.png)
 
-Things you may want to cover:
+<br>
 
-* Ruby version
+## How it works?
 
-* System dependencies
+- Sign up or login
+- Go through all the shoes, search or filter by category and brand
+- Use the like button to add your favorite shoes in your dashboard / crush list
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

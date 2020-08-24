@@ -1,10 +1,10 @@
 # House of Shoes
+<br>
 
 ## Technologies Implemented
 
-Ruby on Rails
-Bootstrap
-CSS
+- Ruby on Rails
+- Bootstrap
 
 ## Aplication Figure
 
@@ -22,8 +22,10 @@ Project Page:
 
 ## How it works?
 
-- Sign up or login
-- Go through all the shoes, search or filter by category and brand
+- First, click 'shoe crushes' to go through all the shoes 
+- Second, sign up
+- Search or filter by categories and brands
 - Use the like button to add your favorite shoes in your dashboard / crush list
+
 
 

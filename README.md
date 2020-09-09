@@ -22,10 +22,14 @@ Project Page:
 
 ## How it works?
 
-- First, click 'shoe crushes' to go through all the shoes 
-- Second, sign up
+- First, sign up
+- Second, find you favorite shoe from the featured shoes
 - Search or filter by categories and brands
 - Use the like button to add your favorite shoes in your dashboard / crush list
 
-
+## Pending Features
+- Sign out
+- 404 page
+- Sharing events
+ 
 

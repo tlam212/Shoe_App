@@ -1,24 +1,36 @@
-# README
+# House of Shoes
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+**Live Website:** https://houseofshoes-app.herokuapp.com/
 
-* System dependencies
+## Technologies Implemented
 
-* Configuration
+- Ruby on Rails
+- Bootstrap
 
-* Database creation
+## Aplication Figure
 
-* Database initialization
+Project Page: 
+<br>
+![](pictures/HOS.png)
+<br>
+![](pictures/HOS2.png)
+<br>
+![](pictures/HOS3.png)
+<br>
+![](pictures/HOS4.png)
 
-* How to run the test suite
+<br>
 
-* Services (job queues, cache servers, search engines, etc.)
+## How it works?
 
-* Deployment instructions
+- First, sign up
+- Second, find you favorite shoe from the featured shoes
+- Search or filter by categories and brands
+- Use the like button to add your favorite shoes in your dashboard / crush list
 
-* ...
+## Pending Features
+- Sign out
+- 404 page
+- Sharing events

@@ -1,6 +1,8 @@
 # House of Shoes
 
-Author: [Tanuka] (https://github.com/tanuka16) & [Tony] (https://github.com/tlam212)
+Author: [Tanuka](https://github.com/tanuka16) & [Tony](https://github.com/tlam212)
+
+**Live Demo:** https://houseofshoes-app.herokuapp.com/
 
 
 ## Technologies Implemented

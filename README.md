@@ -1,10 +1,13 @@
 # House of Shoes
-<br>
+
+Author: [Tanuka] (https://github.com/tanuka16) & [Tony] (https://github.com/tlam212)
+
 
 ## Technologies Implemented
 
+- Ruby
 - Ruby on Rails
-- Bootstrap
+- Bootstrap 
 
 ## Aplication Figure
 
